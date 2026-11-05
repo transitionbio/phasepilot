@@ -1,0 +1,21 @@
+# loop, planner, dashboard
+numpy
+pandas
+scipy
+scikit-learn
+pyarrow
+PyQt5
+pyqtgraph
+
+# live worker (SAM quality gate); the droplet CNN package is internal and not included
+torch
+segment-anything
+tifffile
+scikit-image
+pyyaml
+
+# film pipeline (demo/)
+matplotlib
+Pillow
+imageio-ffmpeg
+vosk

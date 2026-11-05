@@ -1,0 +1,26 @@
+# secrets
+.env
+*.env
+!*.env.example
+
+# python
+__pycache__/
+*.pyc
+.venv*/
+venv/
+
+# model weights, source footage, music, run data (not distributed)
+*.pth
+*.tar.gz
+demo/source/
+demo/tbio/*.mp3
+demo/recording/
+demo/runs/
+runs/
+assets/
+*.ome.tif
+*.parquet
+
+# scratch
+*.bak_*
+*.log

@@ -1,0 +1,159 @@
+{
+ "title": "PhasePilot: a closed loop for phase maps",
+ "beats": [
+  {
+   "type": "title",
+   "seconds": 4,
+   "heading": "PhasePilot",
+   "subtitle": "Muse decides, SAM checks, PhaseScan runs",
+   "presenter": "PhasePilot closes the loop between a microfluidic rig and Muse so each experiment chooses the next one.",
+   "_dur": 4.0
+  },
+  {
+   "type": "explainer",
+   "ss": 0,
+   "len": 22.5,
+   "slow": 1.15,
+   "presenter": "Condensates organise the cell through protein phase separation, and every protein has its own phase diagram to map.",
+   "_dur": 25.875
+  },
+  {
+   "type": "phone",
+   "ss": 15,
+   "seconds": 9,
+   "heading": "PhaseScan on Beta3",
+   "bullets": [
+    "Beta3 mixes protein, RNA, crowder and buffer on-chip with syringe pumps",
+    "The chip stage and pumps run unattended between decisions",
+    "Filmed on the real rig in our Cambridge lab"
+   ],
+   "note": "Real Beta3 footage shot in the lab today.",
+   "presenter": "This is PhaseScan, our Beta3 microfluidic rig at Transition Bio, mixing the components on a chip.",
+   "_dur": 9.0
+  },
+  {
+   "type": "phone",
+   "ss": 33,
+   "seconds": 9,
+   "heading": "Small drops, big maps",
+   "bullets": [
+    "Droplets pass the camera and are imaged in three fluorescence channels",
+    "Each droplet is read live as mixed or phase separated",
+    "One droplet is 100 pL, ~1,000,000x less protein per data point"
+   ],
+   "note": "Every droplet is one experimental condition.",
+   "presenter": "Each 100 picolitre droplet is a single experiment, using about a million times less protein per data point.",
+   "_dur": 9.0
+  },
+  {
+   "type": "explainer",
+   "ss": 28.5,
+   "len": 36.9,
+   "slow": 1.15,
+   "presenter": "Because every added dimension multiplies the work, we handed the experiment to Muse, with SAM reading droplets and a Bayesian planner sampling where the information is.",
+   "_dur": 42.435
+  },
+  {
+   "type": "phone",
+   "ss": 2,
+   "seconds": 6,
+   "heading": "Today: live on Beta3",
+   "bullets": [
+    "Live run today: G3BP1 / PolyA RNA / PEG on Beta3, 4 November 2026",
+    "Muse chose each setpoint from the live evidence and explained why",
+    "SAM outlined every droplet; only passing images count as results"
+   ],
+   "note": "The real PhasePilot dashboard during today's live run.",
+   "presenter": "Today this loop ran live on Beta3 with G3BP1, PolyA RNA and PEG, and Muse explained every setpoint it chose.",
+   "_dur": 6.0
+  },
+  {
+   "type": "loop",
+   "beat": "dash",
+   "slow": 0.8,
+   "presenter": "The dashboard has four panels: decisions, Muse reasoning, SAM quality control, and results with the phase map.",
+   "_dur": 4.8
+  },
+  {
+   "type": "loop",
+   "beat": "sam",
+   "slow": 0.8,
+   "presenter": "SAM ViT-B outlines every droplet on real frames, green for accepted and red for rejected, so a result only counts when the image passes.",
+   "_dur": 8.8
+  },
+  {
+   "type": "loop",
+   "beat": "muse",
+   "slow": 0.85,
+   "presenter": "Here muse-spark-1.3 shows its written reasoning for the next setpoint, readable before the rig moves.",
+   "_dur": 10.2
+  },
+  {
+   "type": "loop",
+   "beat": "map",
+   "slow": 0.8,
+   "presenter": "The Bayesian planner redraws the phase map as results land, with the predicted boundary dashed, and sampling follows that boundary.",
+   "_dur": 16.0
+  },
+  {
+   "type": "results_stats",
+   "seconds": 11.065,
+   "heading": "What the loop saved",
+   "stats": [
+    {
+     "big": "20x",
+     "line": "20x less protein to map the phase boundary",
+     "sub": "2.5 uL instead of 52 uL"
+    },
+    {
+     "big": "17x",
+     "line": "17x less instrument run time",
+     "sub": "2.9 min instead of 51 min"
+    },
+    {
+     "big": "+1",
+     "line": "+1 variable at 10 levels per variable",
+     "sub": "+2 variables at 4 levels per variable, same time and protein"
+    }
+   ],
+   "footnote": "Source: 3-variable replay (G3BP1 / TDP-43 / RNA), boundary accuracy at or above 0.997 vs the full scan.",
+   "presenter": "The replay used twenty times less protein and seventeen times less instrument time, buying at least one extra variable.",
+   "_dur": 11.065
+  },
+  {
+   "type": "results_chart",
+   "seconds": 10,
+   "heading": "Scaling: days, not months",
+   "line": "At six variables: 36 days vs 2 days",
+   "sub": "Legacy scan vs PhasePilot in instrument days against variables mapped",
+   "green_line": "Raster costs k^n; the loop samples the n-1 boundary, ~k^(n-1), buying log_k(17) dimensions.",
+   "presenter": "At six variables the legacy scan takes thirty-six instrument days while PhasePilot takes two, because it samples the boundary surface.",
+   "_dur": 10.0
+  },
+  {
+   "type": "explainer",
+   "ss": 72,
+   "len": 15.5,
+   "slow": 1.15,
+   "presenter": "Biology is high-dimensional across protein, RNA, crowder, salt, pH, compound and temperature, and one closed loop can search any of that space.",
+   "_dur": 17.825
+  },
+  {
+   "type": "end",
+   "seconds": 5,
+   "heading": "PhasePilot",
+   "lines": [
+    "One closed loop per protein: PhaseScan runs it, SAM checks it, Muse decides.",
+    "Built for the Muse hackathon, November 2026"
+   ],
+   "green_line": "One closed loop, any parameter space.",
+   "credits": [
+    "Transition Bio, Cambridge, UK",
+    "Muse muse-spark-1.3, SAM ViT-B, Bayesian planner"
+   ],
+   "presenter": "PhasePilot is one closed loop per protein, built for the Muse hackathon, and ready to map the next parameter space.",
+   "_dur": 5.0
+  }
+ ],
+ "style_notes": "Kept the Transition Bio template throughout: white pages, Arial, blue #1366AB headings, green #008759 key lines, light-blue #DBEFF9 panels and the bubble title and end backgrounds. Split the results into a clean stats reveal and a large chart so each number lands without crowding the slide."
+}

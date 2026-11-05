@@ -1,0 +1,24 @@
+{
+ "started": 1793785811.7709157,
+ "worker_out": "<run>/worker_out",
+ "queue": "<run>/queue",
+ "budget_ul": 3.0,
+ "reserve_ul": 0.5,
+ "hold_s": 25.0,
+ "lag_s": 40.0,
+ "pumps": {
+  "3": "G3BP1",
+  "2": "PolyA",
+  "1": "PEG"
+ },
+ "buffer_pump": 4,
+ "protein_pump": 3,
+ "question": "Where do G3BP1 / PolyA RNA / PEG droplets phase separate? Locate the phase boundary using as little G3BP1 as possible, and stop when the map stops changing. Retrospective replay: recorded PhaseScan Beta3 run of 2026-10-28 (G3BP1 / PolyA RNA / PEG). Instrument and camera simulated from recorded frames; SAM, planner and Muse live. Each setpoint is answered with the recorded droplets imaged nearest to the requested composition.",
+ "muse_model": "muse-spark-1.3",
+ "muse_endpoint": "https://api.meta.ai/v1",
+ "muse_key": true,
+ "sam": "SAM ViT-B (sam_vit_b_01ec64)",
+ "data_note": "Retrospective replay: recorded PhaseScan Beta3 run of 2026-10-28 (G3BP1 / PolyA RNA / PEG). Instrument and camera simulated from recorded frames; SAM, planner and Muse live.",
+ "replay": true,
+ "fault": "C06"
+}

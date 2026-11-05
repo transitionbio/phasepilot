@@ -1,0 +1,148 @@
+{
+ "title": "PhasePilot: Muse Closes the Loop on PhaseScan",
+ "beats": [
+  {
+   "type": "title",
+   "seconds": 4,
+   "heading": "PhasePilot",
+   "subtitle": "Muse (muse-spark-1.3) decides, SAM checks, a Bayesian planner maps",
+   "presenter": "PhasePilot hands a real phase-mapping experiment to Muse and lets it run the loop live.",
+   "_dur": 4.0
+  },
+  {
+   "type": "explainer",
+   "ss": 0,
+   "len": 22,
+   "slow": 1.25,
+   "presenter": "Condensates organise the cell by phase separation, and every protein has its own phase diagram to map.",
+   "_dur": 27.5
+  },
+  {
+   "type": "phone",
+   "ss": 15,
+   "seconds": 9,
+   "heading": "PhaseScan on Beta3",
+   "bullets": [
+    "Beta3 microfluidic rig in our Cambridge lab, filmed today",
+    "Syringe pumps blend protein, RNA, crowder and buffer on chip",
+    "Each 100 pL droplet holds one condition to test"
+   ],
+   "note": "Real footage: rig door, syringe pumps and chip stage in sequence.",
+   "presenter": "This is the real Beta3 rig at Transition Bio that will run the experiment you are about to see.",
+   "_dur": 9.0
+  },
+  {
+   "type": "explainer",
+   "ss": 28.5,
+   "len": 36.9,
+   "slow": 1.2,
+   "presenter": "A droplet uses about a million times less protein, yet the search explodes, so Muse, SAM and the Bayesian planner divide the work.",
+   "_dur": 44.28
+  },
+  {
+   "type": "phone",
+   "ss": 2,
+   "seconds": 9,
+   "heading": "Live today on Beta3",
+   "bullets": [
+    "Live run, 4 November 2026: G3BP1 / PolyA RNA / PEG",
+    "Muse picked each setpoint from live evidence and said why",
+    "SAM outlined every droplet; only passing images count"
+   ],
+   "note": "The dashboard on the rig monitor during today's run, not a mock-up.",
+   "presenter": "Today this loop ran live on G3BP1, PolyA RNA and PEG, with every decision made from the evidence as it arrived.",
+   "_dur": 9.0
+  },
+  {
+   "type": "loop",
+   "beat": "dash",
+   "slow": 1.0,
+   "presenter": "Here is the real dashboard in four parts: decisions, Muse's reasoning, SAM quality control and the growing map.",
+   "_dur": 6.0
+  },
+  {
+   "type": "loop",
+   "beat": "sam",
+   "slow": 1.02,
+   "presenter": "SAM ViT-B outlines every droplet frame, green for accepted and red for rejected, so bad images never become results.",
+   "_dur": 11.22
+  },
+  {
+   "type": "loop",
+   "beat": "muse",
+   "slow": 1.0,
+   "presenter": "Muse reads the accumulated evidence and writes down why this setpoint, and not another, is worth testing next.",
+   "_dur": 12.0
+  },
+  {
+   "type": "loop",
+   "beat": "map",
+   "slow": 1.0,
+   "presenter": "Each accepted result redraws the Bayesian phase map and moves the predicted boundary, shown dashed, to where sampling should go next.",
+   "_dur": 20.0
+  },
+  {
+   "type": "card",
+   "seconds": 4,
+   "heading": "Biology is high-n",
+   "bullets": [
+    "Protein, RNA, crowder, salt, pH, compound, temperature"
+   ],
+   "note": "Every extra variable multiplies a raster scan, so the loop must hunt the boundary instead.",
+   "presenter": "Real biology adds variable after variable, which is exactly where a boundary-hunting loop earns its keep.",
+   "_dur": 4.0
+  },
+  {
+   "type": "results",
+   "seconds": 18,
+   "heading": "Measured gains",
+   "stats": [
+    {
+     "big": "20x",
+     "line": "less protein to map the phase boundary",
+     "sub": "2.5 uL instead of 52 uL"
+    },
+    {
+     "big": "17x",
+     "line": "less instrument run time",
+     "sub": "Pumps and camera busy 2.9 min instead of 51 min"
+    },
+    {
+     "big": "+1/+2",
+     "line": "extra variables in the same instrument time and protein",
+     "sub": "+1 at 10 levels per variable; +2 at 4 levels per variable"
+    }
+   ],
+   "note": "Wall clock was 23 min: 7 rounds each waited 180 s for incubation while pumps idled; keeping droplets flowing brings it to 2.9 min.",
+   "footnote": "Source: 3-variable replay (G3BP1 / TDP-43 / RNA, 180 s incubation); boundary accuracy at or above 0.997 vs the full scan.",
+   "green_line": "A 17x saving buys log_k(17) extra dimensions at every n: raster costs k^n, the loop samples the n-1 boundary at ~k^(n-1).",
+   "presenter": "Against the full scan we measured twenty times less protein, seventeen times less instrument time, and one to two extra variables mapped.",
+   "_dur": 18.0
+  },
+  {
+   "type": "explainer",
+   "ss": 79.5,
+   "len": 8,
+   "slow": 1.25,
+   "presenter": "One closed loop can now be pointed at any protein and any parameter space we choose to explore.",
+   "_dur": 10.0
+  },
+  {
+   "type": "end",
+   "seconds": 5,
+   "heading": "PhasePilot",
+   "lines": [
+    "One closed loop per protein.",
+    "PhaseScan runs it, SAM checks every image, Muse decides what is next."
+   ],
+   "green_line": "Built with Muse (muse-spark-1.3) and SAM ViT-B.",
+   "credits": [
+    "Transition Bio, Cambridge, UK",
+    "Built for the Muse hackathon, November 2026"
+   ],
+   "presenter": "PhasePilot: PhaseScan runs it, SAM checks it, Muse decides, and we would love your questions.",
+   "_dur": 5.0
+  }
+ ],
+ "style_notes": "Kept the Transition Bio template intact (white ground, Arial, blue #1366AB headings, green #008759 key lines, light-blue #DBEFF9 panels, logo top-left, bubble title/end backgrounds) and only tightened the hierarchy so dashboard and results numbers read larger at judging distance. Real lab and dashboard footage keeps its own look, framed by the branded side panels rather than recoloured."
+}

@@ -1,0 +1,69 @@
+PhasePilot voiceover, timed to phasepilot_final2.mp4 (3:00)
+Timecodes are where the picture changes. Keep talking through the cuts; each block just needs to be under way when its picture arrives.
+
+[before play, or over the title]
+Hi, I'm Kristofer Linton-Reid from Transition Bio. Today I'm presenting PhasePilot, an muse-in-the-loop system for high-throughput biology.
+
+
+[0:04] The cell
+Inside every cell, condensates keep things organised, the right molecules, in the right place, at the right time. When they misfire, they drive cancer and neurodegeneration.
+
+[0:12] Like oil in water
+They form by phase separation. Proteins demix into dense liquid droplets, a bit like oil in water.
+
+[0:19] Protein map
+Every protein has its own phase diagram, and it's multidimensional. Add a drug and the boundary moves. Map that boundary, and you can find drugs that act on condensation.
+
+[0:29] The rig
+This is how we do it. That's PhaseScan, our Beta3 rig, filmed this afternoon. Pumps meter protein, RNA, crowder and buffer onto a chip,
+
+[0:38] Droplets as experiments
+and every droplet that comes off it is its own experiment. We image each one in three colours, and a neural network classifies if condensates form or not.
+
+[0:46] A million times less
+Each droplet is a hundred picolitres, about a million times less protein than lab robotics.
+
+[0:51] Exhaustive scan
+But here's the catch. Every new dimension multiplies the work. Past four or five parameters a comprehensive scan becomes impossible, and that's for one protein. We knew we could do better.
+
+[1:04] Muse loop
+So we handed the experiment to Meta's Muse. Muse proposes conditions, PhaseScan runs the droplets, SAM reads the images, the model updates. One loop, per protein.
+
+[1:12] Live readout
+The eyes of that loop are Meta's Segment Anything. It reads our microscopy live, so every droplet feeds the next round.
+
+[1:20] Toward the boundary
+And after every round a Bayesian model updates and steers the sampling toward the phase boundary, because that's where the information is.
+
+[1:28] Live today
+This isn't a simulation. This afternoon it ran for real on Beta3, with G3BP1, polyA RNA and PEG.
+
+[1:34] The dashboard
+This is the dashboard we were watching: every decision, Muse's reasoning, SAM's quality control, and the results.
+
+[1:41] SAM
+Here's SAM on real droplets. Green pass, red are thrown out. If the channel empties, the loop pauses rather than waste protein.
+
+[1:50] Muse decides
+And this is Muse, thinking. It reads the results, the image quality, the protein left, picks one action, and writes down why. The instrument still checks every setpoint before anything moves.
+
+[2:02] The map panel
+Which brings us to the part we really care about: the map.
+
+[2:06] The map, in real time
+Every result redraws it. Blue is mixed, red is phase separated, the dashed line is the boundary. The faded regions are where the model isn't sure yet, and that's exactly where it goes next.
+
+[2:22] The result
+So what does that buy you? Twenty times less protein per phase map, seventeen times less instrument time. Or one more variable for the same budget.
+
+[2:32] Every added variable
+And it scales. A full scan costs k to the n; the loop only follows the boundary. At six variables, thirty-six days become two.
+
+[2:41] Beyond phase separation
+Because biology is high-dimensional: protein, RNA, binding partners, phosphorylation, pH, temperature, all interacting.
+
+[2:47] One closed loop   (let the network fold into the loop before you continue)
+And the same closed loop, an instrument plus an agent, can map any of those spaces. Smart experimentation, well beyond phase separation.
+
+[2:56] End card
+That's PhasePilot. Thank you.

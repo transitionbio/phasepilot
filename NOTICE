@@ -1,0 +1,17 @@
+PhasePilot
+Copyright 2026 Transition Bio Ltd
+
+This product includes software developed at Transition Bio Ltd (https://www.transitionbio.com).
+
+Third-party components and materials:
+
+- Segment Anything (SAM), Meta AI Research, Apache License 2.0. The ViT-B checkpoint is downloaded separately and
+  is not distributed with this repository.
+- Muse (muse-spark-1.3) and Muse Wonder (muse-wonder-1.0) are Meta models accessed through the Meta Model API under
+  Meta's terms; no model weights are included.
+- "Fluidscape" by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0
+  (https://creativecommons.org/licenses/by/4.0/), is used as the music bed in media/phasepilot_demo.mp4. The audio file
+  itself is not distributed with this repository.
+- The explainer animation in the film is by Will Arter, Transition Bio Ltd.
+- The Transition Bio name and logo (demo/tbio/logo.png) are trademarks of Transition Bio Ltd and are not covered by the
+  Apache License.

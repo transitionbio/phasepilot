@@ -1,0 +1,304 @@
+{
+ "title": "PhasePilot by Transition Bio",
+ "beats": [
+  {
+   "type": "title",
+   "seconds": 5,
+   "heading": "PhasePilot",
+   "subtitle": "A closed loop for mapping phase separation \u2014 live on Beta3.",
+   "presenter": "This is PhasePilot, our closed loop that lets Muse run phase-separation experiments.",
+   "_dur": 5.0
+  },
+  {
+   "type": "anim",
+   "seconds": 12,
+   "heading": "Condensates organise the cell",
+   "lines": [
+    {
+     "t": 0,
+     "text": "The right molecules, in the right place, at the right time.",
+     "style": "big"
+    },
+    {
+     "t": 4,
+     "text": "Condensates help organise the cell, droplet by droplet.",
+     "style": "body"
+    },
+    {
+     "t": 8,
+     "text": "When they misfire: cancer and neurodegeneration.",
+     "style": "green"
+    }
+   ],
+   "diagram": "cell",
+   "diagram_params": {
+    "aggregate": true
+   },
+   "presenter": "Condensates organise the cell, and when they misfire they drive cancer and neurodegeneration.",
+   "_dur": 12.0
+  },
+  {
+   "type": "anim",
+   "seconds": 12,
+   "heading": "Every protein has a phase map",
+   "lines": [
+    {
+     "t": 0,
+     "text": "Proteins demix into dense droplets, like oil in water.",
+     "style": "big"
+    },
+    {
+     "t": 4,
+     "text": "Each protein has its own phase diagram, highly multidimensional.",
+     "style": "body"
+    },
+    {
+     "t": 8,
+     "text": "With compound, the boundary rises: less phase separation.",
+     "style": "green"
+    }
+   ],
+   "diagram": "phase_diagram",
+   "diagram_params": {
+    "compound": true
+   },
+   "presenter": "Phase separation is demixing into dense droplets, and mapping each protein's diagram shows how compounds shift it.",
+   "_dur": 12.0
+  },
+  {
+   "type": "anim",
+   "seconds": 12,
+   "heading": "PhaseScan: droplets as experiments",
+   "lines": [
+    {
+     "t": 0,
+     "text": "Each droplet = 100 pL = one experimental condition.",
+     "style": "big"
+    },
+    {
+     "t": 3,
+     "text": "Droplets are imaged in three fluorescence channels.",
+     "style": "body"
+    },
+    {
+     "t": 6,
+     "text": "A CNN calls each one mixed or phase separated, live.",
+     "style": "body"
+    },
+    {
+     "t": 9,
+     "text": "~1,000,000x less protein per data point than conventional labware.",
+     "style": "green"
+    }
+   ],
+   "diagram": "droplet",
+   "diagram_params": {},
+   "presenter": "PhaseScan turns each 100-picolitre droplet into one condition, using about a million times less protein.",
+   "_dur": 12.0
+  },
+  {
+   "type": "anim",
+   "seconds": 12,
+   "heading": "Dimensions multiply the work",
+   "lines": [
+    {
+     "t": 0,
+     "text": "k levels per n variables = k^n conditions.",
+     "style": "big"
+    },
+    {
+     "t": 3,
+     "text": "100,000 at 5 variables; 1,000,000 at 6, for 10 levels.",
+     "style": "body"
+    },
+    {
+     "t": 6,
+     "text": "Time is proportional to t0 times k^n, for just one protein.",
+     "style": "body"
+    },
+    {
+     "t": 9,
+     "text": "Past four or five parameters, a comprehensive scan is impossible.",
+     "style": "green"
+    }
+   ],
+   "diagram": "kn_curve",
+   "diagram_params": {
+    "levels": 10
+   },
+   "presenter": "Every new dimension multiplies the work as k to the n, so past four or five variables a full scan is impossible.",
+   "_dur": 12.0
+  },
+  {
+   "type": "anim",
+   "seconds": 12,
+   "heading": "We handed it to Muse",
+   "lines": [
+    {
+     "t": 0,
+     "text": "Muse proposes conditions. PhaseScan runs the droplets.",
+     "style": "big"
+    },
+    {
+     "t": 3,
+     "text": "SAM checks the images. The Bayesian model updates.",
+     "style": "body"
+    },
+    {
+     "t": 6,
+     "text": "Muse can only choose: run / replicate / pause / finish.",
+     "style": "body"
+    },
+    {
+     "t": 9,
+     "text": "Every setpoint is checked by the instrument controller.",
+     "style": "green"
+    }
+   ],
+   "diagram": "loop",
+   "diagram_params": {},
+   "presenter": "So we handed the experiment to Muse in a closed loop, with the controller checking every setpoint it proposes.",
+   "_dur": 12.0
+  },
+  {
+   "type": "phone",
+   "ss": 2,
+   "seconds": 10,
+   "heading": "Live today on Beta3",
+   "bullets": [
+    "G3BP1 / PolyA RNA / PEG \u2014 live run, 4 November 2026",
+    "Muse chose each setpoint from the live evidence",
+    "Each decision arrived with Muse's explanation of why"
+   ],
+   "note": "Real phone footage: the PhasePilot dashboard on the rig monitor during today's live run.",
+   "presenter": "This is live today: G3BP1, PolyA RNA and PEG on Beta3, with Muse choosing each setpoint and explaining why.",
+   "_dur": 10.0
+  },
+  {
+   "type": "phone",
+   "ss": 24,
+   "seconds": 10,
+   "heading": "The Beta3 rig in the lab",
+   "bullets": [
+    "Syringe pumps and chip stage, close up, today",
+    "PhaseScan runs each condition in microfluidic droplets",
+    "Images stream straight into SAM and the Bayesian planner"
+   ],
+   "note": "Real phone footage from the lab today, shown inside a Transition Bio frame.",
+   "presenter": "And this is the real Beta3 rig in our Cambridge lab, running the droplets Muse asked for.",
+   "_dur": 10.0
+  },
+  {
+   "type": "loop",
+   "beat": "dash",
+   "slow": 1.0,
+   "presenter": "Our real dashboard has four panels: decisions, Muse reasoning, SAM QC, and results with the phase map.",
+   "_dur": 6.0
+  },
+  {
+   "type": "loop",
+   "beat": "sam",
+   "slow": 1.0,
+   "presenter": "SAM segments every real droplet and outlines its condensates; green is accepted, red rejected, and only passes count.",
+   "_dur": 11.0
+  },
+  {
+   "type": "loop",
+   "beat": "muse",
+   "slow": 1.0,
+   "presenter": "Here you can read Muse's written reasoning for a decision, exactly as it arrived during the run.",
+   "_dur": 12.0
+  },
+  {
+   "type": "loop",
+   "beat": "map",
+   "slow": 1.2,
+   "presenter": "The Bayesian planner updates after every round and steers sampling toward the boundary, so the map sharpens where the information is.",
+   "_dur": 24.0
+  },
+  {
+   "type": "results_stats",
+   "seconds": 13,
+   "heading": "Replay: same map, far less work",
+   "stats": [
+    {
+     "big": "20x",
+     "line": "less protein",
+     "sub": "2.5 uL instead of 52 uL in the 3-variable replay"
+    },
+    {
+     "big": "17x",
+     "line": "less instrument run time",
+     "sub": "2.9 min instead of 51 min in the 3-variable replay"
+    },
+    {
+     "big": ">=0.997",
+     "line": "boundary accuracy",
+     "sub": "Versus the full scan \u2014 G3BP1 / TDP-43 / RNA"
+    }
+   ],
+   "footnote": "A 17x saving buys log_k(17) extra dimensions at every n; a raster costs k^n, the loop samples the boundary, ~k^(n-1).",
+   "presenter": "In replay against the full scan, PhasePilot matched the boundary while using twenty times less protein and seventeen times less instrument time.",
+   "_dur": 13.0
+  },
+  {
+   "type": "results_chart",
+   "seconds": 11,
+   "heading": "From weeks to days",
+   "line": "Instrument days against variables mapped",
+   "sub": "Legacy scan vs PhasePilot, with guides at 1 week and 1 month.",
+   "green_line": "+1 variable at 10 levels in the same instrument time and protein; +2 at 4 levels.",
+   "presenter": "At six variables that saving turns thirty-six instrument days into two, and buys at least one extra variable in the same budget.",
+   "_dur": 11.0
+  },
+  {
+   "type": "anim",
+   "seconds": 12,
+   "heading": "One loop, any parameter space",
+   "lines": [
+    {
+     "t": 0,
+     "text": "Biology is high-dimensional.",
+     "style": "big"
+    },
+    {
+     "t": 3,
+     "text": "Protein, RNA, binding partners, phosphorylation, pH, temperature.",
+     "style": "body"
+    },
+    {
+     "t": 6,
+     "text": "Phase separation is demonstrated here; the template travels.",
+     "style": "body"
+    },
+    {
+     "t": 9,
+     "text": "One closed loop for automated experiments well beyond phase separation.",
+     "style": "green"
+    }
+   ],
+   "diagram": "applications",
+   "diagram_params": {},
+   "presenter": "Biology is high-dimensional, so one closed loop that maps any parameter space becomes a template far beyond phase separation.",
+   "_dur": 12.0
+  },
+  {
+   "type": "end",
+   "seconds": 6,
+   "heading": "PhasePilot",
+   "lines": [
+    "Muse chooses. PhaseScan runs. SAM checks.",
+    "The Bayesian model keeps the phase map."
+   ],
+   "green_line": "One closed loop per protein.",
+   "credits": [
+    "Transition Bio \u2014 Cambridge, UK",
+    "Muse (muse-spark-1.3) \u00b7 SAM ViT-B \u00b7 PhaseScan Beta3",
+    "Live run: G3BP1 / PolyA RNA / PEG, 4 November 2026"
+   ],
+   "presenter": "PhasePilot: one closed loop per protein, live today, and ready to map the rules of condensation.",
+   "_dur": 6.0
+  }
+ ],
+ "style_notes": "Plain white slides with the Transition Bio logo top-left, blue #1366AB Arial bold headings, dark grey #404040 text with #008759 green key lines, and one animated diagram on the right in the same palette; real footage keeps its own look inside a Transition Bio frame, with title and end cards on the blue-bubble background."
+}
